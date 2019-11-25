@@ -51,6 +51,17 @@ services:
     tty: true
     <<: *default_volumes
 
+  nginx:
+    build:
+      context: ./nginx
+      target: nginx
+    image: "{{cookiecutter.app_name}}-nginx"
+    ports:
+      - "80:80"
+    depends_on:
+      - flask-prod
+    <<: *default_volumes
+
 volumes:
   node-modules:
   static-build:
