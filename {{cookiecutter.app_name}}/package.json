@@ -36,11 +36,8 @@
     "babel-preset-env": "^1.7.0",
     "concurrently": "^5.0.0",
     "css-loader": "^3.0.0",
-<<<<<<< HEAD
     "standard": "^14.3.1",
-=======
     "file-loader": "^5.0.2",
->>>>>>> upstream/master
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
     "mini-css-extract-plugin": "^0.8.0",
