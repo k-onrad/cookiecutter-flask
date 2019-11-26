@@ -17,7 +17,7 @@ docker-compose up flask-dev
 To run the production version of the app
 
 ```bash
-docker-compose up flask-prod
+docker-compose up nginx
 ```
 
 The list of `environment:` variables in the `docker-compose.yml` file takes precedence over any variables specified in `.env`.
@@ -79,7 +79,7 @@ FLASK_DEBUG=0
 Therefore, starting the app in "production" mode is as simple as
 
 ```bash
-docker-compose up flask-prod
+docker-compose up nginx
 ```
 
 If running without Docker
